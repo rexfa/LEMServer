@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LEMServer</name>
+    </assembly>
+    <members>
+        <member name="M:LEMServer.WebAPIs.GetDeviceInfoController.Get">
+            <summary>
+            获取所有当前在线设备信息
+            </summary>
+            <returns>设备信息列表</returns>
+        </member>
+        <member name="M:LEMServer.WebAPIs.GetDeviceInfoController.Get(System.String)">
+            <summary>
+            获取所有当前在线的某设备信息
+            </summary>
+            <param name="deviceid">设备唯一id，此id也是设备内标识</param>
+            <returns>设备信息</returns>
+        </member>
+        <member name="M:LEMServer.WebAPIs.SetDeivcePowerStatController.Get(System.String,System.Int32)">
+            <summary>
+            设置设备管理的电源
+            </summary>
+            <param name="deviceid">设备信息</param>
+            <param name="devicepowerstat">设备电源0是关，1是开</param>
+            <returns></returns>
+        </member>
+        <member name="M:LEMServer.WebAPIs.SetDeviceStatController.Get(System.String,System.Int32)">
+            <summary>
+            设置设备状态
+            </summary>
+            <param name="deviceid">设备id</param>
+            <param name="devicestat">状态id</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

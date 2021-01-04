@@ -1,0 +1,16 @@
+﻿@page
+@using System.Collections.Generic;
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h3 class="display-4">Welcome</h3>
+    <p>刷新以查看已经注册后的设备</p>
+    <p>
+        @Model.Message
+    </p>
+    @foreach (var str in Model.DeviceInfoList)
+        {<li>@str</li>}
+</div>
